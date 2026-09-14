@@ -17,6 +17,26 @@
   "engines": {
     "node": "24.x"
   },
+  {
+  "name": "interstellar",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "node ./index.ts",
+    "build": "astro build",
+    "vercel-build": "astro build"
+  },
+  "pnpm": {
+    "onlyAllowBuiltDependencies": [
+      "@mercuryworkshop/scramjet",
+      "esbuild",
+      "sharp"
+    ]
+  },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
     "@astrojs/node": "^9.5.2",
