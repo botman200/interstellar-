@@ -28,7 +28,7 @@ if (INConfig.server?.compress !== false) {
 }
 
 export default defineConfig({
-  output: "server",
+  output: "static",
   adapter: node({
     mode: "middleware",
   }),
