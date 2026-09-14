@@ -313,7 +313,7 @@ self.addEventListener("fetch", (event) => {
     }
     done();
   });
-
+// @ts-ignore
   const { handler } = (await import("./dist/server/entry.mjs")) as {
     handler: (req: unknown, res: unknown, next?: () => void) => void;
   };
