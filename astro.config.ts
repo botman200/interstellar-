@@ -1,7 +1,6 @@
 // @ts-nocheck
 import { execFileSync } from "node:child_process";
 import path from "node:path";
-import node from "@astrojs/node";
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import { baremuxPath } from "@mercuryworkshop/bare-mux/node";
@@ -28,10 +27,7 @@ if (INConfig.server?.compress !== false) {
 }
 
 export default defineConfig({
-  output: "static",
-  adapter: node({
-    mode: "middleware",
-  }),
+  output: "static", // Forces Astro into static frontend generation mode
   integrations,
   prefetch: {
     defaultStrategy: "viewport",
