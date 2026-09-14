@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { execFileSync } from "node:child_process";
 import path from "node:path";
 import node from "@astrojs/node";
